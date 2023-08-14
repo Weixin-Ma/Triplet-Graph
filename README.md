@@ -12,7 +12,7 @@ The following picture shows the framework of the Triplet-Graph.
 # What is Triplet-Graph
 ## Semantic Graph 
 A semantic graph is an abstract representation of an input 3D point cloud. Each vertex in the graph refers to the centroid of an object. Two vertices will be connected when their distance is less than a pre-defined threshold.
-<p align="center"><img src="example/basic/graph.gif" width=400></p>
+<p align="center"><img src="graph.gif" width=400></p>
 
 # [Support Material](appendix.pdf)
 Here are the support material, which investigates the effects of some important parameters in Triplet-Graph. 
