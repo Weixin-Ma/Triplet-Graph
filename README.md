@@ -1,5 +1,5 @@
 # Triplet-Graph
-The official implementation of Triplet-Graph.
+The implementation of Triplet-Graph.
 
 The code will be open-sourced upon acceptance of the paper.
 
