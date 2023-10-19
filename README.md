@@ -19,3 +19,5 @@ The triplet is the basic element that we use to extract histogram-based descript
 
 # [Support Material](appendix.pdf)
 Here are the support material, which investigates the effects of some important parameters in Triplet-Graph. 
+<p align="center"><img src="appendix_1.png" width=800></p>
+<p align="center"><img src="appendix_2.png" width=800></p>
