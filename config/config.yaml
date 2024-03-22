@@ -1,0 +1,262 @@
+# This file is covered by the LICENSE file in the root of this project.
+lable_gt: True #False
+rviz_show: True #False
+file_name_length: 6   #file name length for kitti 000001
+eval_seq:
+  seq_id: "06"
+  dataset_path: "/home/mid-melon/TripletGraph_ws/src/tripletgraph/test_data/SemanticKitti/dataset/sequences/"
+  label_prediction_path: "/home/mid-melon/TripletGraph_ws/src/tripletgraph/test_data/label_rangeNet_plusplus/sequences/"
+  pairs_file: "/home/mid-melon/TripletGraph_ws/src/tripletgraph/test_data/pairs/neg_100/"
+voxel_leaf_size: 0.2 
+angel_resolution: 5              # i.e., \theta
+edge_dis_thr: 55                 # i.e., \tau_{edge}
+max_iterations_ransac: 10000     # 10000 for results in paper (100 could be faster, performance might degard)
+percentage_matches_used: 0.4     #sample rate for RANSAC
+ransac_threshold: 0.4            #threshold for RANSAC, for indenfying inlier and outlier
+cere_opt_iterations_max: 1000     
+project_select_thresold: 0.8     #threshold for projection-based selection operation  
+labels: 
+  0 : "unlabeled"
+  1 : "outlier"
+  10: "car"
+  11: "bicycle"
+  13: "bus"
+  15: "motorcycle"
+  16: "on-rails"
+  18: "truck"
+  20: "other-vehicle"
+  30: "person"
+  31: "bicyclist"
+  32: "motorcyclist"
+  40: "road"
+  44: "parking"
+  48: "sidewalk"
+  49: "other-ground"
+  50: "building"
+  51: "fence"
+  52: "other-structure"
+  60: "lane-marking"
+  70: "vegetation"
+  71: "trunk"
+  72: "terrain"
+  80: "pole"
+  81: "traffic-sign"
+  99: "other-object"
+  252: "moving-car"
+  253: "moving-bicyclist"
+  254: "moving-person"
+  255: "moving-motorcyclist"
+  256: "moving-on-rails"
+  257: "moving-bus"
+  258: "moving-truck"
+  259: "moving-other-vehicle"
+classes_for_graph:        # False: not-used, True:used, >=2 
+  0 : False        #"unlabeled"
+  1 : False        #"outlier"
+  10: False        #"car"
+  11: False        #"bicycle"
+  13: False        #"bus"
+  15: False        #"motorcycle"
+  16: False        #"on-rails"
+  18: False        #"truck"
+  20: False        #"other-vehicle"
+  30: False        #"person"
+  31: False        #"bicyclist"
+  32: False        #"motorcyclist"
+  40: False        #"road"
+  44: False        #"parking"
+  48: True         #"sidewalk"
+  49: False        #"other-ground"
+  50: True         #"building"
+  51: True         #"fence"
+  52: False        #"other-structure"
+  60: False        #"lane-marking"
+  70: True         #"vegetation"
+  71: True         #"trunk"
+  72: False        #"terrain"
+  80: True         #"pole"
+  81: True         #"traffic-sign"
+  99: False        #"other-object"
+  252: False       #"moving-car"
+  253: False       #"moving-bicyclist"
+  254: False       #"moving-person"
+  255: False       #"moving-motorcyclist"
+  256: False       #"moving-on-rails"
+  257: False       #"moving-bus"
+  258: False       #"moving-truck"
+  259: False       #"moving-other-vehicle"
+instance_seg_para:      #setClusterTolerance for clustering, should be larger than voxel_leaf_size
+  0 : 0.5       #"unlabeled"
+  1 : 0.5       #"outlier"
+  10: 0.5        #"car"
+  11: 0.5        #"bicycle"
+  13: 0.5        #"bus"
+  15: 0.5        #"motorcycle"
+  16: 0.5        #"on-rails"
+  18: 0.5        #"truck"
+  20: 0.5        #"other-vehicle"
+  30: 0.5        #"person"
+  31: 0.5        #"bicyclist"
+  32: 0.5        #"motorcyclist"
+  40: 0.5        #"road"
+  44: 0.5        #"parking"
+  48: 0.5        #"sidewalk"
+  49: 0.5        #"other-ground"
+  50: 1.0        #"building"
+  51: 0.5        #"fence"
+  52: 0.5        #"other-structure"
+  60: 0.5        #"lane-marking"
+  70: 0.5        #"vegetation"
+  71: 0.5        #"trunk"
+  72: 0.5        #"terrain"
+  80: 0.5        #"pole"
+  81: 0.5        #"traffic-sign"
+  99: 0.5        #"other-object"
+  252: 0.5       #"moving-car"
+  253: 0.5       #"moving-bicyclist"
+  254: 0.5       #"moving-person"
+  255: 0.5       #"moving-motorcyclist"
+  256: 0.5       #"moving-on-rails"
+  257: 0.5       #"moving-bus"
+  258: 0.5       #"moving-truck"
+  259: 0.5       #"moving-other-vehicle" 
+color_map: # bgr
+  0 : [0, 0, 0]
+  1 : [0, 0, 255]
+  10: [245, 150, 100]
+  11: [245, 230, 100]
+  13: [250, 80, 100]
+  15: [150, 60, 30]
+  16: [255, 0, 0]
+  18: [180, 30, 80]
+  20: [255, 0, 0]
+  30: [30, 30, 255]
+  31: [200, 40, 255]
+  32: [90, 30, 150]
+  40: [255, 0, 255]
+  44: [255, 150, 255]
+  48: [75, 0, 75]
+  49: [75, 0, 175]
+  50: [0, 200, 255]
+  51: [50, 120, 255]
+  52: [0, 150, 255]
+  60: [170, 255, 150]
+  70: [0, 175, 0]
+  71: [0, 60, 135]
+  72: [80, 240, 150]
+  80: [150, 240, 255]
+  81: [0, 0, 255]
+  99: [255, 255, 50]
+  252: [245, 150, 100]
+  256: [255, 0, 0]
+  253: [200, 40, 255]
+  254: [30, 30, 255]
+  255: [90, 30, 150]
+  257: [250, 80, 100]
+  258: [180, 30, 80]
+  259: [255, 0, 0]
+mini_point_one_instance:     
+  0 : 10000      #"unlabeled"
+  1 : 10000      #"outlier"
+  10: 80         #"car"
+  11: 80         #"bicycle"
+  13: 80         #"bus"
+  15: 80         #"motorcycle"
+  16: 80         #"on-rails"
+  18: 80         #"truck"
+  20: 80         #"other-vehicle"
+  30: 80         #"person"
+  31: 80         #"bicyclist"
+  32: 80         #"motorcyclist"
+  40: 200        #"road"
+  44: 100        #"parking"
+  48: 200        #"sidewalk"
+  49: 200        #"other-ground"
+  50: 200        #"building"
+  51: 20         #"fence"
+  52: 20         #"other-structure"
+  60: 20         #"lane-marking"
+  70: 150        #"vegetation"
+  71: 20         #"trunk"
+  72: 80         #"terrain"
+  80: 20         #"pole"
+  81: 20         #"traffic-sign"
+  99: 20         #"other-object"
+  252: 1000      #"moving-car"
+  253: 1000      #"moving-bicyclist"
+  254: 1000      #"moving-person"
+  255: 1000      #"moving-motorcyclist"
+  256: 1000      #"moving-on-rails"
+  257: 1000      #"moving-bus"
+  258: 1000      #"moving-truck"
+  259: 1000      #"moving-other-vehicle" 
+weights_for_cere_cost:    #weights for different class, when using cere minimizing total projection error. We simply all use 1.0.         
+  0 : 1.0        #"unlabeled"
+  1 : 1.0        #"outlier"
+  10: 1.0        #"car"
+  11: 1.0        #"bicycle"
+  13: 1.0        #"bus"
+  15: 1.0        #"motorcycle"
+  16: 1.0        #"on-rails"
+  18: 1.0        #"truck"
+  20: 1.0        #"other-vehicle"
+  30: 1.0        #"person"
+  31: 1.0        #"bicyclist"
+  32: 1.0        #"motorcyclist"
+  40: 1.0        #"road"
+  44: 1.0        #"parking"
+  48: 1.0        #"sidewalk"
+  49: 1.0        #"other-ground"
+  50: 1.0        #"building"
+  51: 1.0        #"fence"
+  52: 1.0        #"other-structure"
+  60: 1.0        #"lane-marking"
+  70: 1.0        #"vegetation"
+  71: 1.0        #"trunk"
+  72: 1.0        #"terrain"
+  80: 1.0        #"pole"
+  81: 1.0        #"traffic-sign"
+  99: 1.0        #"other-object"
+  252: 1.0       #"moving-car"
+  253: 1.0       #"moving-bicyclist"
+  254: 1.0       #"moving-person"
+  255: 1.0       #"moving-motorcyclist"
+  256: 1.0       #"moving-on-rails"
+  257: 1.0       #"moving-bus"
+  258: 1.0       #"moving-truck"
+  259: 1.0       #"moving-other-vehicle" 
+weights_for_class:      #weights for different class. When all equal to 1.0, we have Eq.(2)               
+  0 : 1.0        #"unlabeled"
+  1 : 1.0        #"outlier"
+  10: 1.0        #"car"
+  11: 1.0        #"bicycle"
+  13: 1.0        #"bus"
+  15: 1.0        #"motorcycle"
+  16: 1.0        #"on-rails"
+  18: 1.0        #"truck"
+  20: 1.0        #"other-vehicle"
+  30: 1.0        #"person"
+  31: 1.0        #"bicyclist"
+  32: 1.0        #"motorcyclist"
+  40: 1.0        #"road"
+  44: 1.0        #"parking"
+  48: 1.0        #"sidewalk"
+  49: 1.0        #"other-ground"
+  50: 1.0        #"building"
+  51: 1.0        #"fence"
+  52: 1.0        #"other-structure"
+  60: 1.0        #"lane-marking"
+  70: 1.0        #"vegetation"
+  71: 1.0        #"trunk"
+  72: 1.0        #"terrain"
+  80: 1.0        #"pole"
+  81: 1.0        #"traffic-sign"
+  99: 1.0        #"other-object"
+  252: 1.0       #"moving-car"
+  253: 1.0       #"moving-bicyclist"
+  254: 1.0       #"moving-person"
+  255: 1.0       #"moving-motorcyclist"
+  256: 1.0       #"moving-on-rails"
+  257: 1.0       #"moving-bus"
+  258: 1.0       #"moving-truck"
+  259: 1.0       #"moving-other-vehicle" 

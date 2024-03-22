@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="tripletgraph" pkg="tripletgraph" type="tripletgraph_entire_sequence_node" output="screen">
+    <param name="config_file" type="string" value="$(find tripletgraph)/config/config.yaml"/>
+    <param name="results_path" type="string" value="$(find tripletgraph)/results/"/>
+  </node>
+</launch>
