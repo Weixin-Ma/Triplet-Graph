@@ -93,7 +93,7 @@ If you have any questions, please contact:
 # Acknowledgement
 Many thanks to following nice open-source projects:  
 
-* [SSC](https://github.com/lilin-hitcrt/SSC) : Pair list, Kitti data loader
+* [SSC](https://github.com/lilin-hitcrt/SSC) : Pair list, SemanticKitti data loader
 * [A-LOAM](https://github.com/wh200720041/floam) : tic_toc.h
 * [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) : Cere-solver
 
