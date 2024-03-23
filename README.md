@@ -20,7 +20,7 @@ If you find TripletGraph helpful, please consider citing:
 ```
 
 # Basic elements in Triplet-Graph
-## Semantic Graph 
+## Semantic graph 
 A semantic graph is an abstract representation of an input 3D point cloud. Each vertex in the graph refers to the centroid of an object. Two vertices will be connected when their distance is less than a pre-defined threshold.
 <p align="center"><img src="docs/graph.gif" width=800></p>
 
@@ -67,17 +67,17 @@ We provide three different `launch` files.
 *Note that you should replace file paths as yours appropriately in `config.yaml`. 
 
 
-* `tripletgraph_single_pair.launch` This launch file will only run TripletGraph on a single pair of LiDAR scan for the evaluated sequence with visualization using rviz. Please use the following command:
+* `tripletgraph_single_pair.launch` This launch file will only run Triplet-Graph on a single pair of LiDAR scan for the evaluated sequence with visualization using rviz. Please use the following command:
 ```text
 roslaunch tripletgraph tripletgraph_single_pair.launch
 ```
 
-* `tripletgraph_part_seq.launch` This launch file will run TripletGraph on part of pairs of LiDAR scans for the evaluated sequence with visualization using rviz. Please use the following command:
+* `tripletgraph_part_seq.launch` This launch file will run Triplet-Graph on part of pairs of LiDAR scans for the evaluated sequence with visualization using rviz. Please use the following command:
 ```text
 roslaunch tripletgraph tripletgraph_part_seq.launch
 ```
 
-* `tripletgraph_entire_seq.launch` This launch file will run TripletGraph on all pairs of LiDAR scans for the evaluated sequence without visualization(for acceleration). It will take some time to be finished. Once finished, you should be able to find results in `/your path/tripletgraph_ws/src/Triplet-Graph/results/`, including `score.txt`, `rte.txt`, and `rre.txt`. Please use the following command:
+* `tripletgraph_entire_seq.launch` This launch file will run Triplet-Graph on all pairs of LiDAR scans for the evaluated sequence without visualization(for acceleration). It will take some time to be finished. Once finished, you should be able to find results in `/your path/tripletgraph_ws/src/Triplet-Graph/results/`, including `score.txt`, `rte.txt`, and `rre.txt`. Please use the following command:
 ```text
 roslaunch tripletgraph tripletgraph_entire_seq.launch
 ```
