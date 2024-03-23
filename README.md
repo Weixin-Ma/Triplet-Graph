@@ -59,7 +59,7 @@ Please download LiDAR scans from the offical website of [SemanticKitti](http://w
   
 We use semantic label from SemanticKitti and RangeNet++. You can download them from [SemanticKitti](http://www.semantic-kitti.org/) and [RangeNet++](https://github.com/PRBonn/lidar-bonnetal).
 
-For your convenience, you can download all required data [here](https://drive.google.com/file/d/1_BmwHdPqelCiq7tuWky8qiTGhJ1i5ER2/view?usp=sharing) (onely seq-06 is available). 
+For your convenience, you can download all required data [here](https://drive.google.com/file/d/1_BmwHdPqelCiq7tuWky8qiTGhJ1i5ER2/view?usp=sharing) (onely seq-06 is available). Unzip `test_data.zip` to folder `src/Triplet-Graph`.
 
 ## Run
 We provide three different `launch` files.
