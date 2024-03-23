@@ -7,7 +7,7 @@ Overview of Triplet-Graph.
 
 <p align="center"><img src="demo.gif" width=800></p> -->
 
-If you find TripletGraph helpful, please consider citing:
+If you find Triplet-Graph helpful, please consider citing:
 ```bibtex
 @ARTICLE{ma2024triplet,
   author={Ma, Weixin and Huang, Shoudong and Sun, Yuxiang},
