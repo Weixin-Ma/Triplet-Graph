@@ -17,6 +17,7 @@ std::ofstream f_rte_out_;
 std::ofstream f_rre_out_;
 std::ofstream f_cluster_out_;
 
+
 TripletGraph::TripletGraph(ros::NodeHandle &nh){
   nh_=nh;
   
@@ -123,6 +124,7 @@ config_para TripletGraph::get_config(std::string config_file_dir){
   output.seq_id                  = data_cfg["eval_seq"]["seq_id"].as<std::string>();
 
   bool label_gt = data_cfg["lable_gt"].as<bool>();          //semantic labels flag, true: ground truht; false: RangeNet++
+
 
   if(label_gt)
   {

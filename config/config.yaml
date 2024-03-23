@@ -4,13 +4,13 @@ rviz_show: True #False
 file_name_length: 6   #file name length for kitti 000001
 eval_seq:
   seq_id: "06"
-  dataset_path: "/home/mid-melon/TripletGraph_ws/src/Triplet-Graph/test_data/SemanticKitti/dataset/sequences/"
-  label_prediction_path: "/home/mid-melon/TripletGraph_ws/src/Triplet-Graph/test_data/label_rangeNet_plusplus/sequences/"
-  pairs_file: "/home/mid-melon/TripletGraph_ws/src/Triplet-Graph/test_data/pairs/neg_100/"
+  dataset_path: "/your_path/tripletgraph_ws/src/Triplet-Graph/test_data/SemanticKitti/dataset/sequences/"                #replace your_path with yours
+  label_prediction_path: "/your_path/tripletgraph_ws/src/Triplet-Graph/test_data/label_rangeNet_plusplus/sequences/"     #replace your_path with yours
+  pairs_file: "/your_path/tripletgraph_ws/src/Triplet-Graph/test_data/pairs/neg_100/"                                    #replace your_path with yours
 voxel_leaf_size: 0.2 
 angel_resolution: 5              # i.e., \theta
 edge_dis_thr: 55                 # i.e., \tau_{edge}
-max_iterations_ransac: 10000     # 10000 for results in paper (100 could be faster, performance might degard)
+max_iterations_ransac: 100       # 10000 for results in paper (100 could be faster, performance might degard)
 percentage_matches_used: 0.4     #sample rate for RANSAC
 ransac_threshold: 0.4            #threshold for RANSAC, for indenfying inlier and outlier
 cere_opt_iterations_max: 1000     
