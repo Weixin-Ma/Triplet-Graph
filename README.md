@@ -77,7 +77,7 @@ roslaunch tripletgraph tripletgraph_single_pair.launch
 roslaunch tripletgraph tripletgraph_part_seq.launch
 ```
 
-* `tripletgraph_entire_seq.launch` This launch file will run TripletGraph on all pairs of LiDAR scans for the evaluated sequence without visualization(for acceleration). It will take some time to be finished. Once finished, you should be able to find results in `/your path/tripletgraph_ws/src/tripletgraph/results/`, including `score.txt`, `rte.txt`, and `rre.txt`. Please use the following command:
+* `tripletgraph_entire_seq.launch` This launch file will run TripletGraph on all pairs of LiDAR scans for the evaluated sequence without visualization(for acceleration). It will take some time to be finished. Once finished, you should be able to find results in `/your path/tripletgraph_ws/src/Triplet-Graph/results/`, including `score.txt`, `rte.txt`, and `rre.txt`. Please use the following command:
 ```text
 roslaunch tripletgraph tripletgraph_entire_seq.launch
 ```
