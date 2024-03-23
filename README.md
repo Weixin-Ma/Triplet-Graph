@@ -1,7 +1,7 @@
 # <p align="center">Triplet-Graph: Global Metric Localization based on Semantic Triplet Graph for Autonomous Vehicles</p>
 
 
-Triplet-Graph is a key-frame LiDAR based global localization method for simultaneous places similarity measurement and 6-DoF realtive pose estimation. [[paper]](https://ieeexplore.ieee.org/abstract/document/10414178)
+Triplet-Graph is a key-frame LiDAR based global localization method for simultaneous place similarity measurement and 6-DoF realtive pose estimation. [[paper]](https://ieeexplore.ieee.org/abstract/document/10414178)
 <!-- 
 Overview of Triplet-Graph.
 
@@ -29,7 +29,7 @@ Triplet is the basic element that we use to extract histogram-based descriptor f
 <p align="center"><img src="docs/triplet.gif" width=800></p>
 
 # Install
-## Operation System
+## Operation system
 Tested on Ubuntu 20.04
 
 ## Dependencies
@@ -64,7 +64,7 @@ For your convenience, you can download all required data [here](https://drive.go
 ## Run
 We provide three different `launch` files.
 
-*Note that you should replace file paths as yours appropriately in `config_kitti.yaml`. 
+*Note that you should replace file paths as yours appropriately in `config.yaml`. 
 
 
 * `tripletgraph_single_pair.launch` This launch file will only run TripletGraph on a single pair of LiDAR scan for the evaluated sequence with visualization using rviz. Please use the following command:
@@ -77,7 +77,7 @@ roslaunch tripletgraph tripletgraph_single_pair.launch
 roslaunch tripletgraph tripletgraph_part_seq.launch
 ```
 
-* `tripletgraph_entire_seq.launch` This launch file will run TripletGraph on all pairs of LiDAR scans for the evaluated sequence without visualization(for acceleration). It will take some time to be finished. Once finished, you should be able to find results in `/your path/tripletgraph_ws/src/tripletgraph/results/`, including `score.txt`, `rte.txt`, and `rre.txt`.
+* `tripletgraph_entire_seq.launch` This launch file will run TripletGraph on all pairs of LiDAR scans for the evaluated sequence without visualization(for acceleration). It will take some time to be finished. Once finished, you should be able to find results in `/your path/tripletgraph_ws/src/tripletgraph/results/`, including `score.txt`, `rte.txt`, and `rre.txt`. Please use the following command:
 ```text
 roslaunch tripletgraph tripletgraph_entire_seq.launch
 ```
@@ -98,6 +98,6 @@ Many thanks to following nice open-source projects:
 * [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) : Cere-solver
 
 # Support Material
-Here are the support material [docs/appendix.pdf](docs/appendix.pdf), which investigates the effects of some important parameters in Triplet-Graph. 
+Here are the support material [docs/appendix.pdf](docs/appendix.pdf), which investigates the influences of some important parameters on Triplet-Graph. 
 
 
