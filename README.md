@@ -87,7 +87,7 @@ roslaunch tripletgraph tripletgraph_entire_seq.launch
 Based on results files (or you can download [raw data](https://drive.google.com/file/d/1p4qHxb7Et9dQ9k5rIngomVKqlAmFTogm/view?usp=sharing) for results reported in the paper), you can use `eval.py` to get the final results. Copy `eval.py` into the your result folder, and then run command `python3 eval.py`. `numpy`, `sklearn`, and `matplotlib` are required dependences for `eval.py`.
 
 # Todo
-* Example code for using Triplet-Graph in common SLAM framwork, i.e., incrementally building reference database for loop closure detection and loop clousre. (tested idea: global descriptor for top-k candidates searching, and the original process of Triplet-Graph to get the final loop detection and loop closure result.)
+* Example code for using Triplet-Graph in common SLAM framwork, i.e., incrementally building reference database for loop closure detection and loop clousre. (tested idea: global descriptor without selection operation for top-k candidates searching, and then use the global descriptor with selection operation to obtain the final loop closure result from candidates.)
 * Faster version of Triplet-Graph descriptor extractioin.
 
 # Contact
