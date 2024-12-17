@@ -86,9 +86,14 @@ roslaunch tripletgraph tripletgraph_entire_seq.launch
 ## Evaluation
 Based on results files (or you can download [raw data](https://drive.google.com/file/d/1p4qHxb7Et9dQ9k5rIngomVKqlAmFTogm/view?usp=sharing) for results reported in the paper), you can use `eval.py` to get the final results. Copy `eval.py` into the your result folder, and then run command `python3 eval.py`. `numpy`, `sklearn`, and `matplotlib` are required dependences for `eval.py`.
 
-# Todo
-* Example code for using Triplet-Graph in common SLAM framwork, i.e., incrementally building reference database for loop closure detection and loop clousre. (tested idea: global descriptor without selection operation for top-k candidates searching, and then use the global descriptor with selection operation to obtain the final loop closure result from candidates.)
-* Faster version of Triplet-Graph descriptor extractioin.
+# How to use
+There are two ways to use Triplet-Graph.
+
+* Pair-wise comparison: directly compare query frame with each frame in the reference database (easy to implement based on this repository).
+<p align="center"><img src="docs/pairwise_manner.png" width=350></p>
+
+* Coarse-to-fine comparison: get top-k candidates first using global descriptor extracted from the complete graph, and then run the complete process of Triplet-Graph to get the final loop closure result (will be available as the baseline example (include a faster implementation of Triplet-Graph descriptor extraction) in the repository of [TripletLoc](https://github.com/Weixin-Ma/TripletLoc)).
+<p align="center"><img src="docs/coarse2fine_manner.png" width=400></p>
 
 # Contact
 If you have any questions, please contact:
