@@ -94,11 +94,8 @@ There are two ways to use Triplet-Graph.
 
 * Coarse-to-fine comparison: get top-k candidates first using global descriptor extracted from the complete graph, and then run the complete process of Triplet-Graph to get the final loop closure result (will be available as the baseline example (include a faster implementation of Triplet-Graph descriptor extraction) in the repository of [TripletLoc](https://github.com/Weixin-Ma/TripletLoc)). Localization examples in HeLiPR dataset are as following.
 <p align="center"><img src="docs/coarse2fine_manner.png" width=400></p>
-
-<div style="display: flex; align-items: flex-start; justify-content: center; margin-bottom: 20px;">
-  <img src="docs/KAIST05.gif" style="height: 250px; margin-right: 10px;">
-  <img src="docs/Roundabout02.gif" style="height: 250px; margin-right: 10px;">
-</div>
+<p align="center"><img src="docs/KAIST05.gif" width=400></p>
+<p align="center"><img src="docs/Roundabout02.gif" width=400></p>
 
 
 # Contact
